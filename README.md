@@ -1,4 +1,4 @@
-# codecarbone
+# Codecarbone
 tutorial : How to integrate codecarbone in a code. Training LLMs
 
 This document should be a short description with examples, helping students to:
@@ -77,6 +77,12 @@ This will create a csv file (emissions.csv) with the following data :
 
 ## Obtain the total energy consumption of your project :
 Sum all emissions of csv file : 
+
+Chanege : 
+
+File "/home/..user_name../.conda/envs/..env_name../lib/python3.9/site-packages/codecarbon/viz/components.py", line 79, in get_project_dropdown
+    projects = sorted(list(df["project_name"].unique()))
+    -> projects = sorted(list(df["project_name"].astype(str).unique()))
 
 
 Find the [codecarbon repository]'https://github.com/mlco2/codecarbon.git) 
