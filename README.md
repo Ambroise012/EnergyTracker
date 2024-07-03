@@ -14,7 +14,7 @@ This document should be a short description with examples, helping students to:
 ```bash
 pip install codecarbon
 
-pip install -r requirements.t<t
+pip install -r requirements.txt
 ```
 The requirements.txt file contain :
 -arrow
@@ -32,7 +32,7 @@ The requirements.txt file contain :
 from codecarbon import EmissionsTracker
 ```
 ```bash
-tracker = EmissionsTracker()
+tracker = EmissionsTracker() # or EmissionsTracker(project_name="...")
 tracker.start()
 #
 # Compute intensive code goes here
@@ -86,5 +86,7 @@ File "/home/..user_name../.conda/envs/..env_name../lib/python3.9/site-packages/c
 
 
 Find the [codecarbon repository]'https://github.com/mlco2/codecarbon.git) 
+
+carbonboard --filepath="emissions.csv" --port=3333
 
 
