@@ -1,4 +1,4 @@
-# Codecarbone
+# Energy Tracking
 tutorial : How to integrate codecarbone in a code. Training LLMs
 
 This document should be a short description with examples, helping students to:
