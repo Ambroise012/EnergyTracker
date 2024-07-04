@@ -1,13 +1,10 @@
-# Energy Tracking
-tutorial : How to integrate codecarbone in a code. Training LLMs
+# Energy Tracking : Integrate an energy tracker :
+## Understand what needs to be tracked 
+![](images/computer.png)
 
-This document should be a short description with examples, helping students to:
+For more information on Energy and carbon emissions / Where the energy comes from in ITU ?
 
-1) understand what needs to be tracked and why, and where the energy comes from in ITU.
-
-2) setup energy tracking for a computational experiment
-
-2) compute the total expenditure for a project
+I invite you to take a look at [Energy Tracker Presentation](EnergyTracker.pdf)
 
 ## Installations setup
 
@@ -76,17 +73,19 @@ This will create a csv file (emissions.csv) with the following data :
 
 
 ## Obtain the total energy consumption of your project :
-Sum all emissions of csv file : 
+Run this line :
+```bash
+carbonboard --filepath="emissions.csv" --port=3333
+```
+You will then obtain :
 
-Chanege : 
+![](images/total.png)
 
-File "/home/..user_name../.conda/envs/..env_name../lib/python3.9/site-packages/codecarbon/viz/components.py", line 79, in get_project_dropdown
-    projects = sorted(list(df["project_name"].unique()))
-    -> projects = sorted(list(df["project_name"].astype(str).unique()))
+## Some solutions to optimize : Reduce emissions
 
+![](images/optimization.png)
 
 Find the [codecarbon repository]'https://github.com/mlco2/codecarbon.git) 
 
-carbonboard --filepath="emissions.csv" --port=3333
 
 
