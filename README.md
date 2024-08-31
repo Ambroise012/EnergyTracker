@@ -4,7 +4,7 @@
 
 For more information on Energy and carbon emissions / Where the energy comes from in ITU ?
 
-I invite you to take a look at [Energy Tracker Presentation](EnergyTracker.pdf)
+I invite you to take a look at [Energy Tracker Presentation](EnergyTracking.pdf)
 
 ## Installations setup
 
